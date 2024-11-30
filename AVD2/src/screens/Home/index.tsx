@@ -20,14 +20,14 @@ export function Home() {
           <View style={{ width: '100%', height: '75%', backgroundColor: '#5636D3' }}>
             <View style={{ flex: 1, justifyContent: 'center', marginRight: '18%', marginLeft: '18%', alignItems: 'center' }}>
 
-              <FontAwesome5 name="coins" size={40} color="#d89608" />
+              <FontAwesome5 name="coins" size={40} color="#FF872C" />
               <Text style={{ color: '#FFFFFF', textAlign: 'center', fontSize: 30, marginBottom: '18%' }}>gofinances</Text>
               <Text style={{ color: '#FFFFFF', textAlign: 'center', fontSize: 35, marginBottom: '50%' }}>Controle suas finanças de forma muito simples</Text>
 
               <Text style={{ color: '#FFFFFF', textAlign: 'center', fontSize: 18, width: '80%' }}>Faça seu login com uma das contas abaixo</Text>
             </View>
           </View>
-          <View style={{ width: '100%', height: '25%', backgroundColor: '#d89608' }}>
+          <View style={{ width: '100%', height: '25%', backgroundColor: '#FF872C' }}>
             <View style={{ zIndex: 1, marginTop: '-7%', height: '100%', marginRight: '18%', marginLeft: '18%' }}>
               <TouchableOpacity onPress={() => setLogin(true)} style={{ width: '100%', backgroundColor: '#FFF', justifyContent: 'center', height: '25%', marginBottom: '7%' }}>
                 <View style={{ justifyContent: 'space-around', flexDirection: 'row', alignItems: 'center' }}>
@@ -83,6 +83,12 @@ export function Home() {
                 data={data}
                 onChange={() => { }}
               />
+            </View>
+
+            <View style={{ marginTop: '60%' }}>
+              <TouchableOpacity style={{ padding: '5%', backgroundColor: '#FF872C', borderRadius: 5 }}>
+                <Text style={{ textAlign: 'center', fontSize: 25, color: '#FFFF' }}>Enviar</Text>
+              </TouchableOpacity>
             </View>
           </View>
         </>
