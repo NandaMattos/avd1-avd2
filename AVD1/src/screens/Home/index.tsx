@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Pressable, Keyboard, View, Text, TextInput } from "react-native";
+import { Pressable, Keyboard, View, Text, TextInput, TouchableOpacity } from "react-native";
 import MaskInput, { Masks } from "react-native-mask-input";
 
 export function Home() {
@@ -18,22 +18,28 @@ export function Home() {
           </View>
         </View>
         <View style={{ width: '90%', marginTop: '5%', height: '100%' }} >
-          <View style={{ height: '6%', marginBottom: '7%' }}>
+          <View style={{ marginBottom: '7%' }}>
             <TextInput placeholder="Descrição" placeholderTextColor={"#363F5F"} style={{ backgroundColor: '#FFFFFF', padding: '5%', color: "#363F5F" }} />
           </View>
-          <View style={{ height: '6%', marginBottom: '7%' }}>
+          <View style={{ marginBottom: '7%' }}>
             <MaskInput value={value} onChangeText={setValue} mask={Masks.BRL_CURRENCY} placeholder="Valor" keyboardType="number-pad" placeholderTextColor={"#363F5F"} style={{ backgroundColor: '#FFFFFF', padding: '5%', color: "#363F5F" }} />
           </View>
-          <View style={{ height: '6%', marginBottom: '7%' }}>
+          <View style={{ marginBottom: '7%' }}>
             <MaskInput value={date} onChangeText={setDate} mask={Masks.DATE_DDMMYYYY} placeholder="Data Compra" keyboardType="number-pad" placeholderTextColor={"#363F5F"} style={{ backgroundColor: '#FFFFFF', padding: '5%', color: "#363F5F" }} />
           </View>
-          <View style={{ height: '6%', marginBottom: '7%' }}>
+          <View style={{ marginBottom: '7%' }}>
             <TextInput placeholder="Categoria" placeholderTextColor={"#363F5F"} style={{ backgroundColor: '#FFFFFF', padding: '5%', color: "#363F5F" }} />
           </View>
-          <View style={{ height: '6%', marginBottom: '7%' }}>
+          <View style={{ marginBottom: '7%' }}>
             <TextInput placeholder="Local de Compra" placeholderTextColor={"#363F5F"} style={{ backgroundColor: '#FFFFFF', padding: '5%', color: "#363F5F" }} />
           </View>
+          <View style={{ marginTop: '40%' }}>
+            <TouchableOpacity style={{ padding: '5%', backgroundColor: '#FF872C', borderRadius: 5 }}>
+              <Text style={{ textAlign: 'center', fontSize: 25, color: '#FFFF' }}>Adicionar</Text>
+            </TouchableOpacity>
+          </View>
         </View>
+
       </View>
     </Pressable>
 
